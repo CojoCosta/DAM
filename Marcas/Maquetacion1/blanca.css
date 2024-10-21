@@ -1,0 +1,30 @@
+*{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h1{
+    font-weight: bold ;
+}
+.primero::first-letter{
+    font-size: 90px;
+}
+.primero::first-line{
+    font-size: 25px;
+    font-weight: bold;
+}
+.primero:hover{
+    background-color: black;
+    color: orange;
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+}
+table{
+    border: solid;
+}
+td{
+    border: solid;
+}
+td:hover{
+    background-color: black;
+    color: white;
+    font-size: 1.3em;
+}

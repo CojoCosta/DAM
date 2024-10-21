@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Celta for fans</title>
+  <link rel="stylesheet" type="text/css" href="celta.css">
+  <link rel="shortcut icon" href="icono.ico" type="image/x-icon">
+  <meta name="description" content="Official web of Celta&#39;s fans">
+  <meta name="keywords" content="Celta, football, Aspas">
+  <meta http-equiv="refresh" content="5">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+
+<body>
+  <!-- Como poner comentarios -->
+  <h1>Celta Vigo, in constant change</h1>
+  <!-- Encabezado de la pagina-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!-- Final del encabezado-->
+  <!--cajas (div)-->
+  <div id="nav">
+    <ol>
+      <li><a href="http://colegiovivas.com" target="_blank">Markup language</a></li>
+      <li><a href="http://colegiovivas.com" target="_blank">Informatic Systems</a></li>
+      <li><a href="http://colegiovivas.com" target="_blank">Programation</a></li>
+      <li><a href="http://colegiovivas.com" target="_blank">Date Bases</a></li>
+    </ol>
+  </div>
+  <hr>
+  <!--Hacer una tabla 
+      "<tr> es fila</tr>" "<td> es columna </td>"-->
+  <!--thead 
+          th
+          tbody -->
+  <table>
+    <thead>
+      <tr></tr>
+      <th>Nombre</th>
+      <th>Edad</th>
+      <th>Nota</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>8</td>
+        <td>9</td>
+      </tr>
+    </tbody>
+  </table>
+  <hr>
+  <!-- colspan para unir filas
+         rowspan para unir celdas de columnas-->
+  <table>
+    <tr>
+      <td colspan="2">Celda 1</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Celda 2</td>
+      <td>Celda 3</td>
+    </tr>
+    <tr>
+      <td>Celda 4</td>
+    </tr>
+  </table>
+  <hr>
+  <table>
+    <tr>
+      <td colspan="2">1,1 y 2,2 </td>
+      <td>1,3</td>
+    </tr>
+    <tr>
+      <td rowspan="2"> 2,1 y 3,1</td>
+      <td>2,2</td>
+      <td>2,3</td>
+    </tr>
+    <tr>
+      <td>3,2</td>
+      <td>3,3</td>
+    </tr>
+  </table>
+  <hr>
+  <table class="tabla">
+    <tr>
+      <td class="azul" colspan="3">COLUMNAS</td>
+    </tr>
+    <tr>
+      <td rowspan="2">FILAS</td>
+      <td class="amarillo">UNO</td>
+      <td class="amarillo">DOS</td>
+    </tr>
+    <tr>
+      <td class="gris" colspan="2">TRES</td>
+    </tr>
+  </table>
+  <p class="parrafo1">Since the arrival of Claudio Giráldez
+    to the Celeste bench replacing Rafa
+    Benítez, the Galician has not yet repeated
+    a lineup after 15 official matches.</p>
+  <br> <!--hace un espacio-->
+  <a href="http://www.marca.com/" target="_blank" id="marca">Marca</a>
+  <!-- target="blank" para que el enlace se abra en otra pestaña-->
+
+
+  <!--<img src="link" alt="" /class="dimensions" /> imagen en la pagina -->
+  <hr> <!--pinta una raya para separar-->
+  <h3>Claudio Giráldez se busca un lío</h3>
+  <p id="selection"> Claudio Giráldez lined up Vicente
+    Guaita in goal for Celta de Vigo
+    this past Sunday. The Galician
+    coach had already warned before
+    the match about the goalkeeper and
+    how he had been training normally
+    with the rest of the group: "This
+    is the first week that he really
+    feels ready to compete. From there,
+    we will decide between Iván and him.
+    This week of break has been very
+    good for him to be able to complete
+    sessions with the group." With these
+    statements, Guaita could intuit that
+    his chances of playing against
+    Valladolid were real, leaving, in
+    this case, Iván Villar in goal.</p>
+  <br>
+  <a href="http://www.as.com/" id="as">Diario AS</a>
+  <h2>Celta Vigo, in constant change</h2>
+  <p class="parrafo1"><b>Since the arrival of</b> <strong>Claudio Giráldez</strong>
+    to the Celeste bench replacing <u>Rafa
+      Benítez</u>, the <i>Galician</i> has not yet repeated
+    a lineup after 15 official matches.</p>
+  <!--Ejemplo lista-->
+  <ul type="circle">
+    <li>First</li>
+    <li>Second</li>
+    <li>Third</li>
+  </ul>
+  <hr>
+  <!--Lista ordena-->
+  <ol type="I">
+    <li>Buggatti</li>
+    <li>Porsche</li>
+    <li>Maserati</li>
+  </ol>
+  <!--Fin ejemplo lista-->
+  <br>
+  <a href="#as" target="_blank" download="ejercicio1"></a>
+  <a href="http://www.marca.com/" target="_blank" id="marca">Marca</a>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

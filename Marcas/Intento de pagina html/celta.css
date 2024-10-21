@@ -1,0 +1,94 @@
+/*variable (siempre al principio)*/
+:root{
+    --color1: rgb(0, 0, 0);
+
+}
+h1{
+    text-align: center;
+    transition: 1.5s;
+}
+h1:hover{
+    transform: scale(1.2);
+    opacity: 0.5;
+}
+
+h1,h3{
+    color: var(--color1);
+}
+#marca{
+    color: rgb(85, 169, 253);
+    text-decoration: none;
+}
+#as{
+    color: rgb(85, 169, 253);
+    text-decoration: none;
+}
+.parrafo1{
+    font-size: 1.5em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+}
+.parrafo2{
+    font-size: 1em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+}
+#selection{
+    text-align: justify;
+}
+#nav{
+    width: 100%;
+    height: 40px;
+    background-color: black;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+li a{
+    text-decoration: none;
+    color: white;
+}
+#nav li{
+    /*IMPORTANTE DISPLAY, LIST-STYLE */
+    list-style: none;
+    display: inline;
+    margin-right: 25px;
+}
+li a:hover{
+    color: aqua;
+}
+table td{ 
+    border: 1px solid black;
+}
+.azul{
+    background-color: blue;
+}
+.amarillo{
+    background-color: yellow;
+}
+.gris{
+    background-color: rgb(197, 195, 195);
+}
+.tabla{
+    border: 3px solid;
+    width: 50%;
+    height: 300px;
+}
+/*3 parametros, 1º ancho de la linea, 
+2º si es continua o discontinua y 
+3º color de la de lina*/
+/* p  a{ selector de etiqueta dentro de otra 
+    color: brown;
+}                    */
+
+/* p>a{   Selector de la primera etiqueta dentro de otra si hay dos iguales
+    color: aquamarine;
+}                    */
+/*p>a: first-child{ Selector "primer hijo"
+    color: blue;
+}                    */
+/*p>a:nth-child(2){   nth para indicar el ordindario (segundo, tercero...)
+    color: aqua;            entre parentesis el hijo que queremos
+}                    */
+
+

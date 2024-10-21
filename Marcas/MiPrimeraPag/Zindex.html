@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eje Z/ Z Index</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+        }
+        #uno{
+            background-color: skyblue;
+            z-index: 1;
+            position: absolute;
+        }
+        #dos{
+            background-color: rgb(252, 161, 57);
+            z-index: 2;
+            position: absolute;
+            left: 45px;
+            top: 45px;
+        }
+        #tres{
+            background-color: hotpink;
+            z-index: 3;
+            position: absolute;
+            left: 90px;
+            top: 90px;
+            
+        }
+        #cuatro{
+            background-color: lightgreen;
+            z-index: 4;
+            position: absolute;
+            left: 135px;
+            top: 135px;
+        }
+        #uno:hover,#dos:hover,#tres:hover,#cuatro:hover{
+            z-index: 5;
+        }
+    </style>
+</head>
+<body>
+    <div id="uno"></div>
+    <div id="dos"></div>
+    <div id="tres"></div>
+    <div id="cuatro"></div>
+</body>
+</html>
