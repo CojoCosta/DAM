@@ -21,7 +21,8 @@ header{
     display: flex;
     align-items: center;
     justify-content: left;
-    margin: 15px;
+    margin: 0px;
+    margin-left: 15px;
 
 }
 .titulo{

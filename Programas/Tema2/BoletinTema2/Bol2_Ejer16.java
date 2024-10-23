@@ -11,7 +11,7 @@ public class Bol2_Ejer16 {
         do {
             intentos=4;
 
-            System.out.println("Bienvemido a la diversion, si quiere jugar escriba un numero entre el 1 y el 50 ");
+            System.out.println("Bienvemido a la diversion, si quiere jugar escriba un numero entre el 1 y el 100 ");
 
             incognita = sc.nextInt();
             while (incognita < 1 || incognita > 100) {

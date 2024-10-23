@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,49 +9,77 @@
     <meta name="keywords" content="html,formulario,select">
     <meta http-equiv="refresh" content="300">
 </head>
+
 <body>
     <form action="#" method="post">
-        <label for="nombre">Nombre del usuario:</label>
-        <input type="text" name="nombre" id="nombre" placeholder="Nombre">
-        <br>
-        <label for="apellidos">Apellidos del usuario: </label>
-        <input type="text" name="apellidos" id="apellidos" placeholder="Apellidos">
-        <br>
-        <label for="edad">Edad del usuario:</label>
-        <input type="number" name="edad" id="edad">
-        <br>
-        <label for="correo">Email del usuario:</label>
-        <input type="email" name="correo" id="correo">
-        <br>
-        <label for="contra">Contraseña del usuario:</label>
-        <input type="password" name="contra" id="contra">
-        <br> 
-        <label for="estado">Estado civil:</label>
-        <!--Todos los elementos mismo name-->
-        <span>Soltero/a</span> <input type="radio" name="estado" id="soltero" value="soltero/a">
-        <span>Casado/a</span> <input type="radio" name="estado" id="casado" value="casado/a">
-        <span>Divorciado/a</span> <input type="radio" name="estado" id="divorciado" value="divorciado/a">
-        <span>Viúdo/a</span> <input type="radio" name="estado" id="viudo" value="viudo/a">
-        <br>
-        <label for="subscripciones">Subscripciones del usuario:</label><br>
-        <span>National geographic</span><input type="checkbox" name="subscripcion[]" id="sub1" value="national" checked="checked"><br>
-        <span>Electronic ...</span><input type="checkbox" name="subscripcion[]" id="sub2" value="electronic"><br>
-        <span>Muy interesante</span><input type="checkbox" name="subscripcion[]" id="sub3" value="interesante"><br>
-        <span>Salud y biniestar</span><input type="checkbox" name="subscripcion[]" id="sub4" value="salud"><br>
-        <span>Science</span><input type="checkbox" name="subscripcion[]" id="sub5" value="science">
-        <br>
-        <select name="residencia" id="residencia">
-            <option value="">---------------</option>
-            <option value="Pontevedra" selected>Pontevedra</option>
-            <option value="Coruña">A Coruña</option>
-            <option value="Ourense">Ourense</option>
-            <option value="Lugo">Lugo</option>
-        </select>
-        <br>
-        <textarea name="comentarios" id="comentarios" placeholder="Comentarios del usuario" cols="100" rows="2" style="resize: none;"></textarea>
-        <br>
-        <input type="submit" value="Enviar">
-        <input type="reset" value="Resetear">
+        <fieldset>
+            <legend><strong>Datos del usuario</strong></legend>
+            <table>
+                <tr>
+                    <td><label for="nombre">Nombre del usuario:</label></td>
+                    <td><input type="text" name="nombre" id="nombre" placeholder="Nombre" minlength="8" maxlength="20"
+                            size="30" required></td>
+                </tr>
+                <tr>
+                    <td><label for="apellidos">Apellidos del usuario: </label></td>
+                    <td><input type="text" name="apellidos" id="apellidos" placeholder="Apellidos" size="30" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="edad">Edad del usuario:</label></td>
+                    <td><input type="number" name="edad" id="edad" min="18" max="80" style="width: 231px;"></td>
+                </tr>
+                <tr>
+                    <td><label for="correo">Email del usuario:</label></td>
+                    <td><input type="email" name="correo" id="correo" readonly placeholder="benito@gmail.com"></td>
+                </tr>
+                <tr>
+                    <td><label for="contra">Contraseña del usuario:</label></td>
+                    <td><input type="password" name="contra" id="contra"></td>
+                </tr>
+            </table>
+            <br>
+            <label for="estado">Estado civil:</label>
+            <!--Todos los elementos mismo name-->
+            <span>Soltero/a</span> <input type="radio" name="estado" id="soltero" value="soltero/a">
+            <span>Casado/a</span> <input type="radio" name="estado" id="casado" value="casado/a">
+            <span>Divorciado/a</span> <input type="radio" name="estado" id="divorciado" value="divorciado/a">
+            <span>Viúdo/a</span> <input type="radio" name="estado" id="viudo" value="viudo/a">
+        </fieldset>
+        <fieldset>
+            <legend><strong>Datos de subscripción</strong></legend>
+            <label for="subscripciones">Subscripciones del usuario:</label><br>
+            <span>National geographic</span><input type="checkbox" name="subscripcion[]" id="sub1" value="national"
+                checked="checked"><br>
+            <span>Electronic ...</span><input type="checkbox" name="subscripcion[]" id="sub2" value="electronic"><br>
+            <span>Muy interesante</span><input type="checkbox" name="subscripcion[]" id="sub3" value="interesante"><br>
+            <span>Salud y biniestar</span><input type="checkbox" name="subscripcion[]" id="sub4" value="salud"><br>
+            <span>Science</span><input type="checkbox" name="subscripcion[]" id="sub5" value="science">
+            <br>
+            <select name="residencia" id="residencia">
+                <optgroup label="Provincias Galicia">
+                    <option value="">---------------</option>
+                    <option value="Pontevedra" selected>Pontevedra</option>
+                    <option value="Coruña">A Coruña</option>
+                    <option value="Ourense">Ourense</option>
+                    <option value="Lugo">Lugo</option>
+                </optgroup>
+                <optgroup>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                </optgroup>
+            </select>
+            <br>
+            <textarea name="comentarios" id="comentarios" placeholder="Comentarios del usuario" cols="60" rows="2"
+                style="resize: none;"></textarea>
+            <br>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Resetear">
+        </fieldset>
+        <input type="button" value="Botón de tippo button" style="border-radius: 15px;">
+        <button>Etiqueta button</button>
     </form>
 </body>
+
 </html>

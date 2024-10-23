@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <meta name="description" content="ejercicio 1">
+    <meta name="keywords" content="ejercicio, formulario,datos">
+</head>
+
+<body>
+    <h2>Tipos de Input</h2>
+    <table>
+
+        <tr>
+            <td>
+                <label for="usuario">Usuario:</label>
+            </td>
+            <td>
+                <input type="usuario" name="usuario" id="usuario" placeholder="nombre del usuario">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="contra">Contraseña: </label>
+            </td>
+            <td>
+                <input type="password" name="contra" id="contra">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="conectado">Mantener conectado</label>
+            </td>
+            <td>
+                <span> </span><input type="checkbox" name="conectado[]" id="conectado" checked>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="preferencia">Preferencias</label>
+            </td>
+            <td>
+                <input type="radio" name="preferencia" id="mañana"><span>Mañana</span>
+                <input type="radio" name="preferencia" id="tarde"><span>Tarde</span>
+            <input type="radio" name="preferencia" id="noche"><span>Noche</span>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="Ciudad">Ciudad</label>
+            <select name="Ciudad" id="ciudad">
+                <option value="vigo" selected>Vigo</option>
+                <option value="pontevedra">Pontevedra</option>
+                <option value="ourense">Ourense</option>
+            </select>
+        </td>
+    </tr>
+</table>
+</body>
+
+</html>
