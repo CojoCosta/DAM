@@ -11,13 +11,12 @@ public class Bol2_Ejer16 {
         do {
             intentos=4;
 
-            System.out.println("Bienvemido a la diversion, si quiere jugar escriba un numero entre el 1 y el 100 ");
+            System.out.println("Bienvenido a la diversion, si quiere jugar escriba un numero entre el 1 y el 100 ");
 
             incognita = sc.nextInt();
             while (incognita < 1 || incognita > 100) {
                 System.out.print("No te olvides de escoger un numero entre 1 y 100: ");
                 incognita = sc.nextInt();
-                 
             }
             for (int espacio = 0; espacio < 50; espacio++) {
                 System.out.println();
@@ -40,7 +39,7 @@ public class Bol2_Ejer16 {
 
                 }
 
-            } while (acierto != incognita && intentos > -1);
+            } while (acierto != incognita && intentos >-1);
 
             if (acierto == incognita) {
                 System.out.println("Victoria");

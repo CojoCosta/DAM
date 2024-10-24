@@ -9,11 +9,11 @@ public class Bol3_Ejer3 {
      */
     public static Double pedirDato(){
         Scanner sc = new Scanner(System.in);
-        System.out.print("Dime un dato del cilindro: ");
+        System.out.print("Dime un dato : ");
         double n;
         n = sc.nextDouble();
         while (n<0) {
-            System.out.print("Dime un dato del cilindro: ");
+            System.out.print("Debe ser positivo. Dime un dato : ");
             n = sc.nextDouble();
         }
         return n;
@@ -34,7 +34,7 @@ public class Bol3_Ejer3 {
      * @param resultado
      */
     public static void mostrarDato(String algo, double resultado){
-        System.out.printf(algo + "%.3f \n", resultado);
+        System.out.printf("%s %.3f \n",algo, resultado);
     }
     public static void main(String[] args) {
         double altura;

@@ -5,11 +5,11 @@ import java.util.Scanner;
 public class Bol3_Ejer4 {
     /**
      * Programa para verificar si un año es bisiesto
-     * @param año Recoje la variable de los años introducidos por el usuario
-     * @return Con las tres condiciones si es true es bisiesto y si es false  no
+     * @param año Año a comporbar
+     * @return  si es true es bisiesto y si es false  no
      */
     public static boolean bisiesto(int año){
-        return año % 400 == 0 ? true : año %100 == 0 ? false : año %4 == 0 ? true : false;      
+        return año % 400 == 0 ? true : año %100 == 0 ? false : año %4 == 0 ;      
     }
     public static void main(String[] args) {
         int pedirAño;

@@ -16,6 +16,8 @@ public class Bol3_Ejer6 {
                 acu = acu * base;
             } 
         }else {
+            // base = 1/base;
+            // exponente=-exponente;
                 for (int i = 0; i > exponente; i--) {
                     acu = acu * (1/base);
             }
@@ -40,7 +42,7 @@ public class Bol3_Ejer6 {
      */
     public static double progresionGeometrica(double x, int y){
         double acu = 0;
-        for(int i = 1; i <= y ; i++){
+        for(int i = 1; i <= y ; i++){//TODO usar potencia
             acu = (acu * x) + 1;
         }
         return acu ;
@@ -54,12 +56,13 @@ public class Bol3_Ejer6 {
         double base = sc.nextDouble();
         System.out.print("Dime el exponente: ");
         int exponente = sc.nextInt();
-        System.out.printf("\nEl resultado es: %.2f", potencia(base, exponente));
+        System.out.printf("\nEl resultado es: %.2f\n", potencia(base, exponente));
 
         /** Apartado b */
         numeroPotencias(base, exponente);
 
         /**Apartado c */
         System.out.println(progresionGeometrica(base, exponente));
+        
     }
 }
