@@ -13,6 +13,10 @@ h1{
     justify-content: left;
     margin-left: 10%;
 }
+.datos:hover{
+    color: blue;
+    font-size: 15px;
+}
 .parte2{
     height: 100%;
     width: 70%;
