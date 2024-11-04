@@ -10,157 +10,162 @@
 </head>
 
 <body>
-    <h1>Ejercicio 1</h1>
-    <fieldset>
-        <legend>
-            <h2>Tipos de Input</h2>
-        </legend>
-        <table>
-            <tr>
-                <td>
-                    <label for="usuario">Usuario:</label>
-                </td>
-                <td>
-                    <input type="usuario" name="usuario" id="usuario" placeholder="nombre del usuario">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <label for="contra">Contraseña: </label>
-                </td>
-                <td>
-                    <input type="password" name="contra" id="contra">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <label for="conectado">Mantener conectado</label>
-                </td>
-                <td>
-                    <span> </span><input type="checkbox" name="conectado[]" id="conectado" checked>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <label for="preferencia">Preferencias</label>
-                </td>
-                <td>
-                    <input type="radio" name="preferencia" id="mañana"><span>Mañana</span>
-                    <input type="radio" name="preferencia" id="tarde"><span>Tarde</span>
-                    <input type="radio" name="preferencia" id="noche"><span>Noche</span>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <label for="reserva">Reservar</label>
-                </td>
-                <td>
-                    <input type="radio" name="reserva" id="Hotel"><span>Hotel</span>
-                    <input type="radio" name="reserva" id="Coche"><span>Coche</span>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <label for="Ciudad">Ciudad</label>
-                    <select name="Ciudad" id="ciudad">
-                        <option value="vigo" selected>Vigo</option>
-                        <option value="pontevedra">Pontevedra</option>
-                        <option value="ourense">Ourense</option>
-                    </select>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <label for="fotos">Subir Fotografía:</label>
-                </td>
-                <td>
-                    <input type="file" name="fotos" id="fotos">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <button type="submit">Enviar</button>
-                    <button type="reset">Borrar</button>
-                    <button onclick="Window.close()">Salir</button>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <h2>Ejercicio 2</h2>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <button type="submit"><img src="tic.png" alt="" style="height: 70px; width: 70px;"></button>
-                    <button type="reset"><img src="papelera.png" alt="" style="height: 70; width: 70px;"></button>
-                </td>
-            </tr>
-        </table>
-    </fieldset>
-    <h1>Ejercicio 3</h1>
-    <fieldset>
-        <legend>
-            <h2>Tipos de cliente</h2>
-        </legend>
-        <table>
-            <tr>
-                <td>
-                    <label for="tipocliente"></label>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <input type="radio" name="tipocliente" id="particular"><span>Particular</span>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <input type="radio" name="tipocliente" id="asociacion"><span>Asociación</span>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <input type="radio" name="tipocliente" id="empresa"><span>Empresa</span>
-                </td>
-            </tr>
-    </table>
-    </fieldset>
-    <h1>Ejercicio 4</h1>
-    <fieldset>
-        <legend><h2>Información de interés</h2></legend>
-        <table>
-            <tr>
-                <td>
-                    <label for="Comentarios">Comentarios</label>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <textarea name="Comentarios" id="comentarios" placeholder="Escriba aquí sus comentarios..." cols="60" rows="6" style="resize: none; overscroll-behavior: 5"></textarea>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <input type="checkbox" name="aceptar" id="aceptar" checked>
-                    <span>Acepto recibir información publicitaria</span>
-                </td>
-            </tr>
+    <form action="#" method="post">
+        <h1>Ejercicio 1</h1>
+        <fieldset>
+            <legend>
+                <h2>Tipos de Input</h2>
+            </legend>
+            <table>
+                <tr>
+                    <td>
+                        <label for="usuario">Usuario:</label>
+                    </td>
+                    <td>
+                        <input type="usuario" name="usuario" id="usuario" placeholder="nombre del usuario">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="contra">Contraseña: </label>
+                    </td>
+                    <td>
+                        <input type="password" name="contra" id="contra">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="conectado">Mantener conectado</label>
+                    </td>
+                    <td>
+                        <span> </span><input type="checkbox" name="conectado[]" id="conectado" checked>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="preferencia">Preferencias</label>
+                    </td>
+                    <td>
+                        <input type="radio" name="preferencia" id="mañana"><span>Mañana</span>
+                        <input type="radio" name="preferencia" id="tarde"><span>Tarde</span>
+                        <input type="radio" name="preferencia" id="noche"><span>Noche</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="reserva">Reservar</label>
+                    </td>
+                    <td>
+                        <input type="radio" name="reserva" id="Hotel"><span>Hotel</span>
+                        <input type="radio" name="reserva" id="Coche"><span>Coche</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="Ciudad">Ciudad</label>
+                        <select name="Ciudad" id="ciudad">
+                            <option value="vigo" selected>Vigo</option>
+                            <option value="pontevedra">Pontevedra</option>
+                            <option value="ourense">Ourense</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="fotos">Subir Fotografía:</label>
+                    </td>
+                    <td>
+                        <input type="file" name="fotos" id="fotos">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button type="submit">Enviar</button>
+                        <button type="reset">Borrar</button>
+                        <button onclick="Window.close()">Salir</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h2>Ejercicio 2</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button type="submit"><img src="tic.png" alt="" style="height: 70px; width: 70px;"></button>
+                        <button type="reset"><img src="papelera.png" alt="" style="height: 70; width: 70px;"></button>
+                    </td>
+                </tr>
             </table>
-    </fieldset>
-    <h1>Ejercicio 5</h1>
-    <table>
-        <select name="ropa" id="ropa">
-            <optgroup label="Camisas">
-                <option value="Camisas" selected>Manga larga</option>
-                <option value="Camisas">Manga corta</option>
-            </optgroup>
-            <optgroup label="Pantalones">
-                <option value="Pantalones">Pantalón pitillo</option>
-                <option value="Pantalones">Pantalón campana</option>
-                <option value="Pantalones">Pantalón corto</option>
-            </optgroup>
-        </select>
-    </table>
+        </fieldset>
+        <h1>Ejercicio 3</h1>
+        <fieldset>
+            <legend>
+                <h2>Tipos de cliente</h2>
+            </legend>
+            <table>
+                <tr>
+                    <td>
+                        <label for="tipocliente"></label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" name="tipocliente" id="particular"><span>Particular</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" name="tipocliente" id="asociacion"><span>Asociación</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" name="tipocliente" id="empresa"><span>Empresa</span>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <h1>Ejercicio 4</h1>
+        <fieldset>
+            <legend>
+                <h2>Información de interés</h2>
+            </legend>
+            <table>
+                <tr>
+                    <td>
+                        <label for="Comentarios">Comentarios</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <textarea name="Comentarios" id="comentarios" placeholder="Escriba aquí sus comentarios..."
+                            cols="60" rows="6" style="resize: none; overscroll-behavior: 5"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="aceptar" id="aceptar" checked>
+                        <span>Acepto recibir información publicitaria</span>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <h1>Ejercicio 5</h1>
+        <table>
+            <select name="ropa" id="ropa">
+                <optgroup label="Camisas">
+                    <option value="Camisas" selected>Manga larga</option>
+                    <option value="Camisas">Manga corta</option>
+                </optgroup>
+                <optgroup label="Pantalones">
+                    <option value="Pantalones">Pantalón pitillo</option>
+                    <option value="Pantalones">Pantalón campana</option>
+                    <option value="Pantalones">Pantalón corto</option>
+                </optgroup>
+            </select>
+        </table>
+    </form>
 </body>
 
 </html>

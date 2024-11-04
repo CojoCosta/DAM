@@ -40,7 +40,7 @@ public class Bol3_Ejer2 {
         System.out.println("\nTu numero es: " + par(numero) + " y " + positivo(numero));
         f.println(nombre);
         f.println(numero);
-        f.print("Tu numero es: " + par(numero) + " y " + positivo(numero));
+        f.print("Tu numero es: " + (par(numero)?"bi":"no bi") + " y " + positivo(numero));
 
         f.close();
     }

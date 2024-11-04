@@ -41,14 +41,14 @@ public class Bol3_Ejer6 {
      * @return
      */
     public static double progresionGeometrica(double x, int y){
-        double acu = 0;
-        for(int i = 1; i <= y ; i++){//TODO usar potencia
-            acu = (acu * x) + 1;
+        double acu = 1;
+        for(int i = 1; i < y ; i++){//TODO usar potencia
+            acu = acu + potencia(x, i);
         }
         return acu ;
     }
 
-       public static void main(String[] args) {
+        public static void main(String[] args) {
 
         /** apartado a */
         Scanner sc = new Scanner(System.in);

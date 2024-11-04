@@ -1,0 +1,41 @@
+*{
+    margin: 0%;
+}
+header{
+    height: 60px;
+    width: 100%;
+    background-color: #2B4E84;
+    border-bottom: 1px solid white;
+}
+.cabecera{
+    height: 65px;
+    width: 100%;
+    background-color: #3E65A0;
+    display: flex;
+}
+.foto1{
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: left;
+}
+.logo1{
+    height: 50px;
+    margin-left: 10px;
+}
+.idiomas{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    margin-right: 20px;
+}
+#idioma{
+    color: white;
+    background-color: #3E65A0;
+    font-size: 20px;
+    border: 0;
+}
+#idioma:hover{
+    background-color: #2B4E84;
+}

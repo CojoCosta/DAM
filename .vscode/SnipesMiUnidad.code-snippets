@@ -51,7 +51,7 @@
 			"\tswitch ${1:(option)} {",
                 "\t\tcase 1:",
                     "\t\t\t$6;",
-                    "break;",
+                    "break;", 
                 "\t\tcase 2:",
                     "\t\t\t$7;",
                     "\t\t\t\tbreak;",
@@ -70,6 +70,6 @@
 					"\t\t\t\tbreak;",
 			"} while (${1:option}!=5);"
 		],
-		"description": "DoWhile",
+		"description": "MEnu opciones",
 	}
 }
