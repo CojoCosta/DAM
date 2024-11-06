@@ -5,8 +5,8 @@ import java.util.Scanner;
 public class Bol3_Ejer6 {
     /**
      * Ejercicio de calcular el resultado de una potencia
-     * @param base
-     * @param exponente
+     * @param base Base del numero a comprobar
+     * @param exponente Exponente del numero a comprobar
      * @return resultado potencia
      */
     public static double potencia(double base, int exponente) {
@@ -26,8 +26,8 @@ public class Bol3_Ejer6 {
     }
     /**
      * Muestra todas las potencias
-     * @param n Base
-     * @param a Exponente
+     * @param n Base del numero a comprobar
+     * @param a Exponente del numero a comprobar
      */
     public static void numeroPotencias(double n, int a){
         for(int i = 0; i < a ; i++){
@@ -36,13 +36,13 @@ public class Bol3_Ejer6 {
     }
     /**
      * Suma de las potencias
-     * @param x Base
-     * @param y Exponente
-     * @return
+     * @param x Base del numero a comprobar
+     * @param y Exponente del numero a comprobar
+     * @return Suma de las potencias
      */
     public static double progresionGeometrica(double x, int y){
         double acu = 1;
-        for(int i = 1; i < y ; i++){//TODO usar potencia
+        for(int i = 1; i <= y ; i++){ 
             acu = acu + potencia(x, i);
         }
         return acu ;

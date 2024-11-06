@@ -24,17 +24,23 @@ public class Bol3_Ejer5 {
         }
         f.close();
     }
-    public static String leerAñosFile(String fileName) throws Exception{
-        Scanner file = new Scanner(new File(fileName));
-        String contentFile = ""; // Almacena los datos del archivo 
+    /**
+     * 
+     * @param archivo Archivo donde se escribirán los años bisiestos y los que no lo son
+     * @return String con los datos del archivo
+     * @throws Exception
+     */
+    public static String leerAñosFile(String archivo) throws Exception{
+        Scanner file = new Scanner(new File(archivo));
+        String contenidoarchivo = ""; // Almacena los datos del archivo 
         file.nextLine(); // Salto de la primera línea para que no la lea
         while (file.hasNext()) { // Bucle que lee todas las líneas de archivo (Excepto la primera)
-            contentFile = file.nextLine();
-            System.out.printf("%6s;", contentFile);
+            contenidoarchivo = file.nextLine();
+            System.out.printf("%6s;", contenidoarchivo);
         }
         System.out.println(); // Salto de línea
         file.close();
-        return contentFile;
+        return contenidoarchivo;
     }
     public static void main(String[] args) throws Exception {
         Scanner sc = new Scanner(System.in);
