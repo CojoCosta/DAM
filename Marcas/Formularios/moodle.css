@@ -39,3 +39,104 @@ header{
 #idioma:hover{
     background-color: #2B4E84;
 }
+.fondoGris{
+    background-color: #E5E8EB;
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu{
+    height: 550px;
+    width: 600px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.logo1{
+    height: 30%;
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logoazul{
+    height: 130px;
+    width: 470px;
+}
+table{
+    margin-left: 40px;
+}
+.formulario{
+    height: 50%;
+    display: flex;
+    justify-content: left;
+}
+#acceder{
+    height: 50px;
+    width: 150px;
+    background-color: #3E65A0;
+    color: white;
+    border: 0;
+    border-radius: 10px;
+}
+#acceder:hover{
+    background-color: #2B4E84;
+}
+#usuario, #contra{
+    height: 35px;
+    width: 170px;
+}
+#usuario:focus, #contra:focus{
+    outline: solid 1px #3E65A0;
+}
+.olvidar{
+    text-decoration: none;
+    color: #3E65A0;
+}
+.olvidar:hover{
+    text-decoration: underline;
+}
+.linea1{
+    background-color: #E5E8EB;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.menu2{
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.idiomas2{
+    width: 50%;
+    margin-left: 40px;
+    border-right: solid 1px rgb(186, 186, 186);
+}
+#idioma2{
+    width: 70%;
+    color: #3E65A0;
+    background-color: white;
+    border: 0;
+    border-right: black;
+}
+.aviso{
+    width: 50%;
+    margin-left: 40px;
+}
+.boton:hover{
+    border: solid 1px;
+}
+.boton{
+    background-color: rgb(198, 195, 195);
+    border: 0;
+    border-radius: 15px;
+    width: 200px;
+    height: 50px;
+}
+option{
+    color: white;
+    background-color: #3E65A0;
+}
