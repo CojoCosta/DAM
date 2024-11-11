@@ -1,36 +1,64 @@
 package Programas.Tema3.BoletinTema3;
 
+import java.io.PrintWriter;
+import java.io.File;
+import java.util.Scanner;
+
 public class Bol3_Ejer9 {
 
-    public static void main(String[] args) {
-        int opcion = 0;
+    public static void main(String[] args) throws Exception {
         Scanner sc = new Scanner(System.in);
+        System.out.println();
         int option;
+        int numero;
+        String archivo;
         do {
             System.out.println("1.- Mostrar primos menores que uno dado: ");
             System.out.println("2.- Primos en archivo: ");
             System.out.println("3.- Archivo con primos:  ");
             System.out.println("4.- Salir.  ");
-            switch option {
+            option = sc.nextInt();
+            switch (option) {
                 case 1:
-                    ;
-                        break;
+                    System.out.print("Dime un numero mayor que 2:");
+                    numero = sc.nextInt();
+                    Bol3_Ejer8.numerosPrimos(numero);
+                    break;
                 case 2:
-                    ;
-                        break;
+                    archivo = "./Programas/Tema3/BoletinTema3/Ej9.txt";
+                    Scanner scannerArchivo = new Scanner(new File(archivo));
+                    int nPrimos;
+                    while (scannerArchivo.hasNext()) {
+                        nPrimos = scannerArchivo.nextInt();
+                        if (Bol3_Ejer8.primo(nPrimos)) {
+                            System.out.println(nPrimos + " es primo");
+                        } else {
+                            System.out.println(nPrimos + " no es primo");
+                        }
+                        scannerArchivo.close();
+                    }
+                    break;
                 case 3:
-                    ;
-                        break;
+                    System.out.print("Dime un numero mayor que 2: ");
+                    numero = sc.nextInt();
+                    PrintWriter escribirWriter = new PrintWriter(new File("./Programas/Tema3/BoletinTema3/Ej9.txt"));
+                    for(int i = 2; i <= numero; i++){
+                        if(Bol3_Ejer8.primo(i)){
+                            escribirWriter.print(i + ";");
+                        }
+                    }
+                    escribirWriter.close();
+                    break;
                 case 4:
-                    System.out.println("Gracias por venir");
-                        break;
+                    System.out.println("Adiós");
                 default:
-                    System.out.println("Opcion no valida");
-                        break;
-        } while (option!=4);
-        
+                    break;
+            }
+        } while (option != 4);
+    }
 }
-// 9. Modifica el ejercicio anterior de los números primos (solo el main) de forma
+// 9. Modifica el ejercicio anterior de los números primos (solo el main) de
+// forma
 // que hagas un menú clásico con estas opciones:
 // 1. Mostrar primos menores que uno dado: Esto es lo que ya estaba del
 // ejercicio previo.

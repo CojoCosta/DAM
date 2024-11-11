@@ -11,7 +11,7 @@ public class Bol3_Ejer5 {
      * @throws Exception
      */
     public static void escribirAñosFile(int año) throws Exception {
-        PrintWriter f = new PrintWriter("Ej5.txt");
+        PrintWriter f = new PrintWriter("./Programas/Tema3/BoletinTema3/Ej5.txt");
         if (Bol3_Ejer4.bisiesto(año)) {
             f.printf("EL %d es bisiesto", año);
         } else {
@@ -48,7 +48,7 @@ public class Bol3_Ejer5 {
         System.out.print("Introduce un año: ");
         año = sc.nextInt();
         escribirAñosFile(año);
-        leerAñosFile("Ej5.txt");
+        leerAñosFile("./Programas/Tema3/BoletinTema3/Ej5.txt");
     }
 }
 

@@ -9,7 +9,7 @@
     <meta name="keywords" content="navidad, estudio, dam, bolas,morado">
     <meta http-equiv="refresh" content="25">
     <link rel="stylesheet" href="navidad.css">
-    <link rel="shortcut icon" href="icono.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="abeto.png" type="image/x-icon">
 </head>
 
 <body>
@@ -18,11 +18,106 @@
     </header>
     <nav>
         <ul class="menu">
-            <li>Comercio</li>
-            <li>Promociones</li>
-            <li>Fechas de apertura</li>
-            <li>Contacto</li>
+            <li><a href="https://www.colegiovivas.com/">Comercio</a></li>
+            <li><a href="https://www.colegiovivas.com/">Promociones</a></li>
+            <li><a href="https://www.colegiovivas.com/">Fechas de apertura</a></li>
+            <li><a href="https://www.colegiovivas.com/">Contacto</a></li>
         </ul>
     </nav>
+    <section name="cuerpo" id="cuerpo">
+        <div class="formulario">
+            <p class="nombre">Formulario de inscripción</p>
+            <br>
+            <form action="#" method="post">
+                <table>
+                    <tr>
+                        <td><label for="nombre">Nombre</label></td>
+                        <td><label for="apellido">Apellido</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="nombre" id="nombre" placeholder="Añadir nombre"></td>
+                        <td><input type="text" name="apellido" id="apellido" placeholder="Añadir apellido"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="direccion">Dirección</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text" name="direccion" id="direccion" placeholder="Añadir dirección">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="correo">Correo</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="email" name="correo" id="correo" placeholder="Añadir correo">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="telefono">Teléfono</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="tel" name="telefono" id="telefono" placeholder="Añadir teléfono">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="sexo">Sexo</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="radio" name="sexo" id="masculino">
+                            <label for="masculino">Masculino</label>
+                            <input type="radio" name="sexo" id="femenino">
+                            <label for="femenino">Femenino</label>
+                        </td>
+                    </tr>
+                </table>
+                <div class="boton">
+                    <input type="submit" value="Enviar" class="enviar">
+                </div>
+            </form>
+        </div>
+        <div class="segundaParte">
+            <img src="foto_navidad.png" alt="foto_navidad" class="foto_navidad">
+            <p class="texto">Accede a todas nuestras ofertas y promociones registrandote de forma gratuita en nuestra
+                web. Recibirás al instante todas las novedades de nuestro catálogo de productos.</p>
+            <fieldset>
+                <form action=""></form>
+                <table>
+                    <legend>Newsletter</legend>
+                    <tr>
+                        <td>
+                            <select name="diario" id="diario">
+                                <option value="diariamente">Diariamente</option>
+                                <option value="nunca">Nunca</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="acepto" id="acepto" checked>
+                            <span>Acepto recibir newsletters</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="submit" value="Solicitar">
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+        </div>
+    </section>
 </body>
+
 </html>

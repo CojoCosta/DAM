@@ -1,11 +1,12 @@
-*{
+* {
     margin: 0;
 }
-body{
+
+body {
     background-color: #8A2BE1;
 }
 
-header{
+header {
     width: 100%;
     height: 200px;
     color: white;
@@ -16,11 +17,12 @@ header{
     background-image: url(cabecera_navidad.jpg);
 }
 
-.cabecera{
+.cabecera {
     height: 100%;
     width: 100%;
 }
-nav{
+
+nav {
     width: 100%;
     height: 50px;
     background-color: #8A2BE1;
@@ -28,7 +30,8 @@ nav{
     justify-content: space-around;
     align-items: center;
 }
-.menu{
+
+.menu {
     width: 100%;
     height: 100%;
     list-style-type: none;
@@ -37,13 +40,77 @@ nav{
     align-items: center;
     justify-content: center;
 }
-li{
+
+li {
     margin-right: 40px;
     margin-left: 40px;
     font-size: 20px;
 }
-li:hover{
+
+a:hover {
     color: deepskyblue;
     text-decoration: underline;
-    
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+section{
+    width: 100%;
+    height: 600px;
+    background-color: #8A2BE1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.formulario{
+    width: 45%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #B983FF;
+    font-size: 20px;
+    border: 0;
+    border-radius: 20px;
+    margin: 20px;
+}
+.nombre{
+    color: white;
+}
+.segundaParte{
+    width: 30%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+}
+.foto_navidad{
+    width: 50%;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.texto{
+    width: 50%;
+    text-align: justify;
+}
+
+.enviar{
+    background-color: white;
+    width: 300px;
+    height: 35px;
+    border-radius: 20px;
+}
+.boton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

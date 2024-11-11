@@ -44,16 +44,16 @@ public class Bol3_Ejer7 {// TODO docs
         f.close();
     }
 
-    public static void main(String[] args) throws Exception {
-        System.out.println(readFile("Ej7.txt"));
+    public static void main(String[] args) throws Exception { 
+        System.out.println(readFile("./Programas/Tema3/BoletinTema3/Ej7.txt"));
         Scanner sc = new Scanner(System.in);
         String msg; // Almacena mensaje del user
         System.out.print("Introduce un mensaje: ");
         msg = sc.nextLine();
-        System.out.println(readFile("Ej7.txt"));
-        appendFile("Ej7.txt", "hola");
-        System.out.println(readFile("Ej7.txt"));
-        appendFile2("Ej7.txt", "adios");
-        System.out.println(readFile("Ej7.txt"));
+        System.out.println(readFile("./Programas/Tema3/BoletinTema3/Ej7.txt"));
+        appendFile("./Programas/Tema3/BoletinTema3/Ej7.txt", "hola");
+        System.out.println(readFile("./Programas/Tema3/BoletinTema3/Ej7.txt"));
+        appendFile2("./Programas/Tema3/BoletinTema3/Ej7.txt", "adios");
+        System.out.println(readFile("./Programas/Tema3/BoletinTema3/Ej7.txt"));
     }
 }

@@ -31,7 +31,7 @@ public class Bol3_Ejer2 {
 
     public static void main(String[] args) throws Exception{
         Scanner sc = new Scanner(System.in);
-        PrintWriter f = new PrintWriter("Ej1.txt");
+        PrintWriter f = new PrintWriter("./Programas/Tema3/BoletinTema3/Ej1.txt");
         System.out.print("Dime tu nombre: ");
         String nombre = sc.nextLine();
         lineasBlanco(10);

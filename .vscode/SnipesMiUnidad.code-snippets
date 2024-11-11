@@ -41,7 +41,7 @@
 	"Menú 4 opciones":{
 		"prefix": "menu",
 		"body": [//TODO quitar los print en los case e identación
-			"int ${1:option}",
+			"int ${1:option;}",
 			"do {",
 			"\tSystem.out.println(\"1.-$2\");",
 			"\tSystem.out.println(\"2.-$3\");",
@@ -51,7 +51,7 @@
 			"\tswitch ${1:(option)} {",
                 "\t\tcase 1:",
                     "\t\t\t$6;",
-                    "break;", 
+                    "\t\t\t\tbreak;", 
                 "\t\tcase 2:",
                     "\t\t\t$7;",
                     "\t\t\t\tbreak;",
@@ -68,8 +68,9 @@
 					"\t\tdefault:",
                     "\t\t\tSystem.out.println(\"Opcion no valida\");",                    
 					"\t\t\t\tbreak;",
+			"\t}",
 			"} while (${1:option}!=5);"
 		],
-		"description": "MEnu opciones",
+		"description": "Menu opciones",
 	}
 }

@@ -37,8 +37,8 @@ public class Bol3_Ejer8 {
      */
     public static void numerosPrimos(int n) {
         for (int i = 2; i <= n; i++) {
-            if (primo(n)) {
-                System.out.println();
+            if (primo(i)) {
+                System.out.println(i);
             }
         }
 
