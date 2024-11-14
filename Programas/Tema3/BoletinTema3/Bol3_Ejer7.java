@@ -5,10 +5,11 @@ import java.io.PrintWriter;
 import java.util.Scanner;
 import java.io.FileWriter;
 
-public class Bol3_Ejer7 {// TODO docs
+public class Bol3_Ejer7 { 
     /**
-     * @param archivo lee el archivo y devuelve su contenido
-     * @return String con el contenido del archivo
+     * lee el archivo y devuelve su contenido
+     * @param archivo Nombre o ruta del archivo
+     * @return Contenido del archivo
      */
     public static String readFile(String archivo) throws Exception {
         Scanner f = new Scanner(new File(archivo));
@@ -22,6 +23,7 @@ public class Bol3_Ejer7 {// TODO docs
     }
 
     /**
+     * Añade cierto texto a un archivo
      * @param archivo escribe el contenido en el archivo
      * @param msg mensaje a añadir
      */

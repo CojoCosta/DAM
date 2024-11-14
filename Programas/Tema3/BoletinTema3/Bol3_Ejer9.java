@@ -35,8 +35,8 @@ public class Bol3_Ejer9 {
                         } else {
                             System.out.println(nPrimos + " no es primo");
                         }
-                        scannerArchivo.close();
                     }
+                    scannerArchivo.close();
                     break;
                 case 3:
                     System.out.print("Dime un numero mayor que 2: ");

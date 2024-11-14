@@ -44,7 +44,7 @@ public class Bol3_Ejer8 {
 
     }
 
-    public static void main(String[] args) { // TODO mostrar primos menores que uno dado
+    public static void main(String[] args) {  
         int numero;
         Scanner sc = new Scanner(System.in);
         System.out.print("Dime un numero mayor que 2: ");

@@ -2,8 +2,11 @@ package Programas.Tema3.BoletinTema3;
 
 import java.util.Scanner;
 public class Bol3_Ejer10 {
-    public static double calcularArea(double base, double altura, boolean flag) {
+    public static double calcularArea(double base, double altura, boolean flag) {//TODO docs
         return flag ? (base * altura) : (base * altura / 2);
+    }
+    public static double calcularAreaCirculo(int radio) {
+        return Math.PI * (radio * radio);
     }
 
     public static void main(String[] args) {
@@ -11,6 +14,7 @@ public class Bol3_Ejer10 {
     int option;
     double base, altura;
     double area;
+    double radio;
     
     do {
         System.out.println("1.- Area de un triangulo");
@@ -41,7 +45,11 @@ public class Bol3_Ejer10 {
                 area = calcularArea(base, base, true);
                     break;
             case 4:
-                ;
+            System.out.println("Area de un círculo");
+            System.out.print("Indica el tamaño del radio: ");
+            radio = sc.nextInt();
+            System.out.println(calcularAreaCirculo(radio));
+            break;;//TODO circulo
                     break;
             case 5:
                 System.out.println("Gracias por venir");

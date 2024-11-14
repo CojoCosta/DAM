@@ -2,25 +2,34 @@ package Programas.Tema3.BoletinTema3;
 
 import java.util.Scanner;
 
-public class Bol3_Ejer11 {
+/**
+ * Coseno de un ángulo aproximado por Taylor
+ */
+public class Bol3_Ejer11 {//TODO docs
     public static double factorial(int n) {
         return n == 0 || n == 1 ? 1 : n * factorial(n - 1);
     }
+    /**
+     * Calcula la potencia de un número 
+     * X es el número al que se calcula la potencia
+     * Y es el exponente y el factorial de ese número
+     */
     public static double cosenoTaylor(double x, int n) {
         double resultado = 0;
         for (int i = 0; i <= n; i = i+2) {
-            resultado = 1 - (Bol3_Ejer6.potencia(x, i) / factorial(i));
+            resultado = 1 - (Bol3_Ejer6.potencia(x, i) / factorial(i));//Alterna resta y suma
         }
         return resultado;
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         double number;
-        System.out.print("Introduce un numero: ");
+        System.out.print("Introduce un numero: ");//TODO comparar con Math.cos
         number = sc.nextDouble();
         for (double i = 0.1; i <= 1; i = i+0.1) {
             number = cosenoTaylor(i, 4);
-            System.out.println(i + " " +number);
+            System.out.print(i + " " +number);
+            System.out.printf("\nCoseno de %f es %f\n\n",i, Math.cos(i));
         }
         sc.close(); 
     }

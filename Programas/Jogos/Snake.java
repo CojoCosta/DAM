@@ -1,4 +1,4 @@
-/*
+ /*
  * SNAKE
  * Very basic example of the snake game.
  * by Guillermo Sampallo - 2019
