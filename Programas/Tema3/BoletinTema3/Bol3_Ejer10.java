@@ -1,64 +1,66 @@
 package Programas.Tema3.BoletinTema3;
 
 import java.util.Scanner;
+
 public class Bol3_Ejer10 {
-    public static double calcularArea(double base, double altura, boolean flag) {//TODO docs
+    public static double calcularArea(double base, double altura, boolean flag) {// TODO docs
         return flag ? (base * altura) : (base * altura / 2);
     }
-    public static double calcularAreaCirculo(int radio) {
+
+    public static double calcularAreaCirculo(double radio) {
         return Math.PI * (radio * radio);
     }
 
     public static void main(String[] args) {
-    Scanner sc = new Scanner(System.in);
-    int option;
-    double base, altura;
-    double area;
-    double radio;
-    
-    do {
-        System.out.println("1.- Area de un triangulo");
-        System.out.println("2.- Area de un rectangulo");
-        System.out.println("3.- Area de un cuadrado");
-        System.out.println("4.- Area de un circulo");
-        System.out.println("5.- Salir.");
-        System.out.print("Dime de que quieres calcular el area: ");
-        option = sc.nextInt();
-        switch (option) {
-            case 1:
-                System.out.print("Dime la base del triangulo: ");
-                base = sc.nextDouble();
-                System.out.print("Dime la altura del triangulo: ");
-                altura = sc.nextDouble();
-                area = calcularArea(base, altura, false);
-                break;
-            case 2:
-                System.out.print("Dime la base del rectangulo: ");
-                base = sc.nextDouble();
-                System.out.print("Dime la altura del rectangulo: ");
-                altura = sc.nextDouble();
-                area = calcularArea(base, altura, true);
-                break;
-            case 3:
-                System.out.print("Dime el lado del cuadrado: ");
-                base = sc.nextDouble();
-                area = calcularArea(base, base, true);
+        Scanner sc = new Scanner(System.in);
+        int option;
+        double base, altura;
+        double area;
+        double radio;
+
+        do {
+            System.out.println("1.- Area de un triangulo");
+            System.out.println("2.- Area de un rectangulo");
+            System.out.println("3.- Area de un cuadrado");
+            System.out.println("4.- Area de un circulo");
+            System.out.println("5.- Salir.");
+            System.out.print("Dime de que quieres calcular el area: ");
+            option = sc.nextInt();
+            switch (option) {
+                case 1:
+                    System.out.print("Dime la base del triangulo: ");
+                    base = sc.nextDouble();
+                    System.out.print("Dime la altura del triangulo: ");
+                    altura = sc.nextDouble();
+                    area = calcularArea(base, altura, false);
                     break;
-            case 4:
-            System.out.println("Area de un círculo");
-            System.out.print("Indica el tamaño del radio: ");
-            radio = sc.nextInt();
-            System.out.println(calcularAreaCirculo(radio));
-            break;;//TODO circulo
+                case 2:
+                    System.out.print("Dime la base del rectangulo: ");
+                    base = sc.nextDouble();
+                    System.out.print("Dime la altura del rectangulo: ");
+                    altura = sc.nextDouble();
+                    area = calcularArea(base, altura, true);
                     break;
-            case 5:
-                System.out.println("Gracias por venir");
+                case 3:
+                    System.out.print("Dime el lado del cuadrado: ");
+                    base = sc.nextDouble();
+                    area = calcularArea(base, base, true);
                     break;
-            default:
-                System.out.println("Opcion no valida");
+                case 4:
+                    System.out.println("Area de un círculo");
+                    System.out.print("Indica el tamaño del radio: ");
+                    radio = sc.nextDouble();
+                    System.out.println(calcularAreaCirculo(radio));
+                    break;// TODO circulo
+
+                case 5:
+                    System.out.println("Gracias por venir");
                     break;
-            } 
-        }while (option!=5);
+                default:
+                    System.out.println("Opcion no valida");
+                    break;
+            }
+        } while (option != 5);
     }
 }
 
