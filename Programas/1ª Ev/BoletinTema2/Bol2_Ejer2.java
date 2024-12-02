@@ -25,6 +25,6 @@ public class Bol2_Ejer2 {
         if (n1 % n2 == 0 || n2 % n1 ==0 ) {
                 System.out.println(n1 + " Son multiplos");
             } 
-
+            sc.close();
     }
 }

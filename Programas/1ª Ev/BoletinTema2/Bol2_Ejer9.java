@@ -19,6 +19,6 @@ public class Bol2_Ejer9 {
         
         System.out.printf("Maximo es: %d", maximo);
         
-        
+        sc.close();
     }
 }

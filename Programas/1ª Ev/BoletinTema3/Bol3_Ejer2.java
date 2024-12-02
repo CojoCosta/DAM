@@ -1,4 +1,4 @@
-package Programas.Tema3.BoletinTema3;
+package Programas.BoletinTema3;
 import java.util.Scanner;
 import java.io.PrintWriter;
 public class Bol3_Ejer2 {

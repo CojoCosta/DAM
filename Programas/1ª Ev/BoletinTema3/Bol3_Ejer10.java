@@ -1,13 +1,26 @@
-package Programas.Tema3.BoletinTema3;
+package Programas.BoletinTema3;
 
 import java.util.Scanner;
 
 public class Bol3_Ejer10 {
-    public static double calcularArea(double base, double altura, boolean flag) {// TODO docs
+    /**
+     * funcion calcular el area de un cuadrado, rectangulo o triangulo
+     * @param base dato de la base de la figura
+     * @param altura dato de la altura de la figura
+     * @param flag true para calcular rect y false para tri 
+     * @return El area de la figura
+     */
+    public static double calcularArea(double base, double altura, boolean flag) {
         return flag ? (base * altura) : (base * altura / 2);
     }
 
-    public static double calcularAreaCirculo(double radio) {
+
+    /**
+     * funcion para calcular el area del circulo
+     * @param radio El radio del circulo
+     * @return El area del circulo
+     */
+    public static double calcularAreaCirculo(double radio) {//
         return Math.PI * (radio * radio);
     }
 
@@ -51,7 +64,7 @@ public class Bol3_Ejer10 {
                     System.out.print("Indica el tamaño del radio: ");
                     radio = sc.nextDouble();
                     System.out.println(calcularAreaCirculo(radio));
-                    break;// TODO circulo
+                    break;
 
                 case 5:
                     System.out.println("Gracias por venir");
@@ -61,6 +74,7 @@ public class Bol3_Ejer10 {
                     break;
             }
         } while (option != 5);
+    sc.close();
     }
 }
 

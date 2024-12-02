@@ -1,4 +1,4 @@
-package Programas.Tema3.BoletinTema3;
+package Programas.BoletinTema3;
 
 import java.io.File;
 import java.io.PrintWriter;

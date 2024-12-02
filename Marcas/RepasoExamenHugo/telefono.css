@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+}
+body{
+    background-image: url(fondo.jpeg);
+    background-size: cover;
+}
+section{
+    width: 95%;
+    height: 95%;
+    border: solid 1px black;
+    display: flex;
+}
+label{
+    color: white;
+}

@@ -1,10 +1,10 @@
-package Programas.Tema3.BoletinTema3;
+package Programas.BoletinTema3;
 
 import java.util.Scanner;
 
 //un numero aleatorio entre 1 y 3 sin usar math.ceil 
 public class Bol3_Ejer12 {
-    public static char generarQuiniela() {
+    public static char generarQuiniela() {//TODO docs
         int numeroAleatorio = (int) (Math.random() * 3);
         return numeroAleatorio == 1 ? '1' : numeroAleatorio == 2 ? '2' : 'X';
     }
@@ -29,14 +29,14 @@ public class Bol3_Ejer12 {
                 cont=0;
                 for (int i = 0; i<14 ; i++){
                     cont = cont+1;
-                    System.out.printf("El resultado del partido %d es %s\n", cont, generarQuiniela());
+                    System.out.printf("El resultado del partido %2d es %s\n", cont, generarQuiniela());
                 }
                 break;
                 case 2:
                 cont = 0;
                 for (int i = 0; i < 14; i++) {
                     cont = cont+1;
-                    System.out.printf("El resultado del partido %d es %s\n", cont, quinielaPonderada());                    }
+                    System.out.printf("El resultado del partido %2d es %s\n", cont, quinielaPonderada());                    }
                         break;
                 case 3:
                     System.out.println("Gracias por venir");

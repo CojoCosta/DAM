@@ -13,5 +13,6 @@ public class Bol2_Ejer4 {
 
         System.out.printf("Decimal: %d \nOctal: %05o \nHexadecimal: %X", n, n, n);
         System.out.printf("Numero real: %7.3f ", n1);
+        sc.close();
     }
 }

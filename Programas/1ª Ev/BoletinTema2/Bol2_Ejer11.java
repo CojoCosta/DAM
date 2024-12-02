@@ -3,7 +3,7 @@ public class Bol2_Ejer11 {
 
         int acu = 0;
         int cont = 0;
-      
+    
             while (acu < 10000) {
                 cont++;
                 acu = acu + cont;

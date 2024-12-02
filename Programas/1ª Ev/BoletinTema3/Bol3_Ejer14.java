@@ -1,8 +1,10 @@
-package Programas.Tema3.BoletinTema3;
-
-import java.util.Scanner;
+package Programas.BoletinTema3;
 
 public class Bol3_Ejer14 {
+    /**
+     * Mestra por pantallaelresultado de dtirar dos dados de 6 caras
+     * @return la suma de los dados
+     */
     public static int tiradaDados() {
         int numeroAleatorio1 = (int) (Math.random() * 6 + 1);
         int numeroAleatorio2 = (int) (Math.random() * 6 + 1);
@@ -11,7 +13,11 @@ public class Bol3_Ejer14 {
         System.out.printf("El dado 2 sale: %d\n", numeroAleatorio2);
         return tirada;
     }
-
+    /**
+     * comprobacion de resultados
+     * @param tirada que es el resultado
+     * @return 0    1      suma
+     */
     public static int comprobaciónTirada(int tirada) {
         if (tirada == 7 || tirada == 11) {
             return 0;
@@ -24,19 +30,20 @@ public class Bol3_Ejer14 {
         }
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) {//TODO revisar lógica del juego (que no aparezca la cpu si gana o pierde el usuario)
         int tiradaUsuario = tiradaDados();
         int tiradaCPU = tiradaDados();
+
         System.out.printf("Tirada jugador 1: %d\n", tiradaUsuario);
         if (comprobaciónTirada(tiradaUsuario) == 0) {
         } else if (comprobaciónTirada(tiradaUsuario) == -1) {
         }
+
         System.out.printf("Turno de la CPU: %d\n", tiradaCPU);
         if (comprobaciónTirada(tiradaCPU) == 0) {
         } else if (comprobaciónTirada(tiradaCPU) == -1) {
-        } else {
+        } 
 
-        }
         if (comprobaciónTirada(tiradaUsuario) == 0) {
             System.out.println("Ganador ususario en la primera tirada");
         } else if (comprobaciónTirada(tiradaUsuario) == -1) {
@@ -47,9 +54,9 @@ public class Bol3_Ejer14 {
             } else if (comprobaciónTirada(tiradaCPU) == -1) {
                 System.out.println("Ganador usuario en la tirada de la CPU");
             } else if (tiradaUsuario > tiradaCPU) {
-                System.out.println("Ganador usuario por puntuacion mayor!");
+                System.out.println("Ganador usuario por mayor puntuacion");
             } else if (tiradaUsuario < tiradaCPU) {
-                System.out.println("Derrotado, victoria de la CPU por puntuacion");
+                System.out.println("Ganador CPU por mayor puntuacion");
             }else {
                 System.out.println("Empate");
             }

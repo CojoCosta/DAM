@@ -17,5 +17,6 @@ public class Bol2_Ejer3 {
             }
             System.out.println(acu);
         }
+        sc.close();
     }
 }

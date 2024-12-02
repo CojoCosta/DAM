@@ -1,4 +1,4 @@
-package Programas.Tema3.BoletinTema3;
+package Programas.BoletinTema3;
 
 import java.util.Scanner;
 
@@ -12,7 +12,7 @@ public class Bol3_Ejer11 {//TODO docs
     /**
      * Calcula la potencia de un número 
      * X es el número al que se calcula la potencia
-     * Y es el exponente y el factorial de ese número
+     * n es el exponente y el factorial de ese número
      */
     public static double cosenoTaylor(double x, int n) {
         double resultado = 0;

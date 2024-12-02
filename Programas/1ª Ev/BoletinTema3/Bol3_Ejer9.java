@@ -1,4 +1,4 @@
-package Programas.Tema3.BoletinTema3;
+package Programas.BoletinTema3;
 
 import java.io.PrintWriter;
 import java.io.File;
@@ -55,6 +55,7 @@ public class Bol3_Ejer9 {
                     break;
             }
         } while (option != 4);
+        sc.close();
     }
 }
 // 9. Modifica el ejercicio anterior de los números primos (solo el main) de
