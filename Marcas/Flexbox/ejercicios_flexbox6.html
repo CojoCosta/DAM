@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Flexbox 3</title>
+    <title>Flexbox 6</title>
     <style>
         html {
             font-family: sans-serif;
@@ -29,21 +29,18 @@
             padding: 10px;
             margin: 10px;
             background: aqua;
+            width: 50%;
         }
+        
         section{
             display: flex;
-
+            flex-direction: column;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
         }
-        .uno{
-            order: 1;
-        }
-        .dos{
-            order: 3
-        }
-        .tres{
-            order: 2;
-        }
-
+        
+        
         /* Add your flexbox CSS below here */
     </style>
 </head>
@@ -62,6 +59,7 @@
                 iPhone photo booth health goth gastropub hammock.</p>
         </article>
         <article class="dos">
+            <h2>First article</h2>
             <h2>Second article</h2>
             <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones
                 retro fanny pack portland everyday carry vinyl typewriter. Tacos PBR&B pork
@@ -69,7 +67,8 @@
                 PBR&B tattooed trust fund twee, leggings salvia
                 iPhone photo booth health goth gastropub hammock.</p>
         </article>
-        <article class="tres">
+        <article class="tres flex-container">
+            <h2>First article</h2>
             <h2>Third article</h2>
             <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones
                 retro fanny pack portland everyday carry vinyl typewriter. Tacos PBR&B pork
