@@ -1,0 +1,76 @@
+{
+	// Place your Mi unidad workspace snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+	// Placeholders with the same ids are connected.
+	// Example:
+	"Imprimir con formato": {
+		"prefix": "tf",
+		"body": [
+			"System.out.printf(\"$2\\n\", $ ${1:var1});",
+			"$0"
+		],
+		"description": "Printf"
+	},
+
+
+	//EJERCICIO 1
+	"Hacer un Scanner": {
+		"prefix": "scn",
+		"body": [
+			"Scanner sc = new Scanner(System.in);"
+		],
+		"description": "Scanner"
+	},
+
+
+	"Pedir numero al usuario":{
+		"prefix": "msg",
+		"body": [
+			"System.out.println(\"$1\");",
+			"$0 = sc.nextInt();"
+			],
+			"description": "sc.nextint"
+	},
+	
+	
+	
+	//EJERCICIO 2
+	"Menú 4 opciones":{
+		"prefix": "menu",
+		"body": [//TODO quitar los print en los case e identación
+			"int ${1:option;}",
+			"do {",
+			"\tSystem.out.println(\"1.-$2\");",
+			"\tSystem.out.println(\"2.-$3\");",
+			"\tSystem.out.println(\"3.-$4\");",
+			"\tSystem.out.println(\"4.-$5\");",
+			"\tSystem.out.println(\"5.- Salir.\");",
+			"\tswitch ${1:(option)} {",
+                "\t\tcase 1:",
+                    "\t\t\t$6;",
+                    "\t\t\t\tbreak;", 
+                "\t\tcase 2:",
+                    "\t\t\t$7;",
+                    "\t\t\t\tbreak;",
+                "\t\tcase 3:",
+                    "\t\t\t$8;",
+                    "\t\t\t\tbreak;",
+                "\t\tcase 4:",
+                    "\t\t\t$0;",
+                    "\t\t\t\tbreak;",
+				"\t\tcase 5:",
+                    "\t\t\tSystem.out.println(\"Gracias por venir\");",
+                    "\t\t\t\tbreak;",
+
+					"\t\tdefault:",
+                    "\t\t\tSystem.out.println(\"Opcion no valida\");",                    
+					"\t\t\t\tbreak;",
+			"\t}",
+			"} while (${1:option}!=5);"
+		],
+		"description": "Menu opciones",
+	}
+}
