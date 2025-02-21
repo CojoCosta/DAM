@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My first program using javascript</title>
+    <script src="funciones.js"></script>
+</head>
+<body>
+    <h1 id = "encabezado">Hello world</h1>
+    <h3 id = "encabezado2"></h3>
+    <button>Change the text</button>
+                        <!--SIN ID-->
+    <script> 
+        var boton = document.getElementsByTagName("button");
+        boton[0].onclick = cambiar;
+        function cambiar(){
+            var encabezado = document.getElementsByTagName("h1");
+            encabezado[0].innerHTML = "Good bye world";
+        }
+    </script>
+                        <!--CON ID-->
+    <script>
+        var boton = document.getElementsByTagName("button");
+        boton[0].onclick = cambiar; //gestion de eventos y funcion sin parentesis
+        function cambiar(){
+            var encabezado = document.getElementById("encabezado");
+            var encabezado2 = document.getElementById("encabezado2");
+            encabezado2.innerHTML = encabezado.innerHTML;
+            encabezado.innerHTML = "Good bye world";
+        }
+    </script>
+    <p>This is javascript</p>
+
+    <!--<script>
+    document.write("THis is my first programm using javascript </h2");
+    document.write("<br>");
+    </script>-->
+
+    <script>saludar();</script>
+</body>
+</html>

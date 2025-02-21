@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, paper, scissor</title>
+    <link rel="stylesheet" href="Estilos.css">
+    <meta name="description" content="Game player vs computer">
+    <meta name="keywords" content="rock, paper, scissor">
+    <script>
+        function playGame(playerChoice) {
+            var computerChoice = getRandomChoice();
+            var result = determineWinner(playerChoice, computerChoice);
+            document.getElementById("result").innerText = `Player chose ${playerChoice}, computer chose ${computerChoice}.\n Result: ${result}`;
+        }
+
+        function getRandomChoice() {
+            var choices = ['rock', 'paper', 'scissor'];
+            return choices[Math.floor(Math.random() * choices.length)];
+        }
+
+        function determineWinner(playerChoice, computerChoice) {
+            if (playerChoice === computerChoice) {
+                return "It's a tie!";
+            } else if (
+                (playerChoice === 'rock' && computerChoice === 'scissor') ||
+                (playerChoice === 'paper' && computerChoice === 'rock') ||
+                (playerChoice === 'scissor' && computerChoice === 'paper')
+            ) {
+                return "Player wins!";
+            } else {
+                return "Computer wins!";
+            }
+        }
+        
+
+        window.onload = function () {
+            document.getElementById("rock").addEventListener("click", function () {
+                playGame('rock');
+            });
+            document.getElementById("paper").addEventListener("click", function () {
+                playGame('paper');
+            });
+            document.getElementById("scissor").addEventListener("click", function () {
+                playGame('scissor');
+            });            
+        }
+    </script>
+</head>
+
+<body>
+    <div class="contenido">
+        <header>
+            <div class="titulo">
+                <h1>Rock, paper, scissor</h1>
+            </div>
+
+            <div class="botones">
+                <a href="Reglas.html" id="rules"><button id="botonR">Rules</button></a>
+            </div>
+        </header>
+        <div id="fotos">
+            <button onclick="playGame('rock')" id="piedra"><img src="piedra.jpg" alt="" id="foto1"></button>
+            <button onclick="playGame('paper')" id="papel"><img src="papel.jpg" alt=""></button>
+            <button onclick="playGame('scissor')" id="tijera"><img src="tijera.jgp.jpg" alt=""></button>
+        </div>
+        <p id="result"></p>
+        <script src="script.js"></script>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objeto Event</title>
+    <script>
+        function pantalla(evento){
+            var info = document.getElementById("info");
+            info.innerHTML = "La cordenada x es: " + evento.clientX + " y la coordenada y es: " + evento.clientY;
+        }
+        function teclado(evento){
+            var info = document.getElementById("info");
+            info.innerHTML = "La tecla pulsada es: " + String.fromCharCode(evento.which) + " y el ascii asociado es: " + evento.which;
+            
+        }
+        function cliqueo(evento){
+            var info = document.getElementById("body");
+            if (evento.clientX < 957 && evento.clientX > 0 && evento.clientY >0 && evento.clientY < 475) {
+                body.style.backgroundColor="red";
+            } else if (evento.clientX < 957 && evento.clientX > 0 && evento.clientY >=475 && evento.clientY < 951) {
+                body.style.backgroundColor="green";
+            } else if (evento.clientX >= 957 && evento.clientX < 1919 && evento.clientY >0 && evento.clientY < 475) {
+                body.style.backgroundColor="blue";
+            } else if (evento.clientX >= 957 && evento.clientX < 1919&& evento.clientY >=475 && evento.clientY < 951) {
+                body.style.backgroundColor="yellow";
+            }
+        }
+        window.onload = function(){
+            document.onmousemove = pantalla;
+            document.onkeypress = teclado;
+            document.onclick = cliqueo;
+        }
+    </script>
+</head>
+<body id="body">
+    <div id = "info"></div>
+</body>
+</html>

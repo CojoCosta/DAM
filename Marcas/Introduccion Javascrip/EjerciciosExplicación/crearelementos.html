@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear elementos usando "API DOM"</title>
+    <SCript>
+        function engadir(){            
+            var lista = document.getElementById("lista");
+            var producto = prompt("Añade un producto a la lista: ");
+            /*Creo un nodo para almacenar el string de texto*/
+            var texto = document.createTextNode(producto);
+            /*Creo un nodo de la etiqueta <li>*/
+            var elemento = document.createElement("li");
+            elemento.appendChild(texto);
+            lista.appendChild(elemento);
+        }
+        function borrar(){
+            var listaElementos = document.getElementsByTagName("li");
+            var producto = prompt("Que producto deseas eliminar?");
+            for(var i = 0; i < listaElementos.length; i++){
+                if(listaElementos[i].innerHTML == producto){
+                    //listaElementos[i].parentNode.removeChild(listaElementos[i]);
+                    listaElementos[i].style.textDecoration = "line-through";
+                    listaElementos[i].style.color = "red";
+                }
+            } 
+
+        }
+        window.onload=function(){
+            //gestiono eventos y llamadas a las funciones
+            var botones = document.getElementsByTagName("button");
+            //gestion de eventos semanticos
+            botones[0].onclick = engadir;
+            //gestion de eventos usando addEventListener
+            botones[1].addEventListener("dblclick", borrar, false)
+        }
+    </SCript>
+</head>
+<body>
+    <h1>Lista de la compra</h1>
+    <ol id = "lista"></ol>
+    <button>Añadir producto</button>
+    <button>Eliminar producto</button>
+</body>
+</html>

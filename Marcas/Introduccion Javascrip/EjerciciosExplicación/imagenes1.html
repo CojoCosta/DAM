@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background images</title>
+    <style>
+        div{
+            width: 300px;
+            height: auto;
+        }
+    </style>
+    <script>
+        function fondo(){
+            var contenedor = document.getElementById("container");
+            if(this.innerHTML == "Imagen 1");
+                contenedor.style.backgroundImage="url(\"imagen1\")"
+        }
+        window.onload = function(){
+            var cabeceras = document.querySelectorAll("h3");
+            for(var i in cabeceras){
+                // cabeceras[i].onmouseover = fondo;
+                cabeceras[i].addEventListener("mouseover",fondo,false);
+            }
+        }
+    </script>
+</head>
+<body>
+    <h3>Imagen 1</h3>
+    <h3>Imagen 2</h3>
+    <h3>Imagen 3</h3>
+
+    <div id="container"></div>
+</body>
+</html>

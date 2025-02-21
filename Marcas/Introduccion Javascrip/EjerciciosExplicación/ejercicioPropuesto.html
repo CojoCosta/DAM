@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ocultar y mostrar texto</title>
+    <style>
+        a {
+            cursor: pointer;
+            color: blue;
+        }
+    </style>
+    <script>
+        function ocultarTexto() {
+            var enlaces = this.id; //Con el this puedo nacceder a cualquiera de los 3 enlaces
+            var numero = enlaces[enlaces.length - 1]; //Usamos el string de arriba como un array
+            var texto = document.getElementById("p" + numero);
+            if (this.innerHTML == "Ocultar Texto") {
+                texto.style.display = "none";
+                this.innerHTML = "Mostrar Texto";
+            } else if (this.innerHTML == "Mostrar Texto") {
+                texto.style.display = "block";
+                this.innerHTML = "Ocultar Texto";
+            }
+        }
+
+        window.onload = function () {
+            var enlace = document.getElementsByTagName("a");
+            for (i in enlace) {
+                enlace[i].onclick = ocultarTexto;
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+    <p id="p1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem deleniti facilis porro perferendis magni
+        veritatis ipsum non iste earum distinctio laborum, odit asperiores explicabo, maxime, natus labore enim
+        repudiandae fuga.</p>
+    <a id="e1">Ocultar Texto</a>
+    <br>
+    <p id="p2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem deleniti facilis porro perferendis magni
+        veritatis ipsum non iste earum distinctio laborum, odit asperiores explicabo, maxime, natus labore enim
+        repudiandae fuga.</p>
+    <a id="e2">Ocultar Texto</a>
+    <br>
+    <p id="p3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem deleniti facilis porro perferendis magni
+        veritatis ipsum non iste earum distinctio laborum, odit asperiores explicabo, maxime, natus labore enim
+        repudiandae fuga.</p>
+    <a id="e3">Ocultar Texto</a>
+</body>
+
+</html>

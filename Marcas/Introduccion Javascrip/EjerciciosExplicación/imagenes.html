@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagenes</title>
+    <script>
+        function mostrar(){
+            var imagen = document.getElementsByTagName("img");
+            if(this.innerHTML == "Image 1"){
+                imagen[0].src = "imagen1.jpg"//Nombre que le pomga a la foto descargada en mi carpeta.
+            } else {
+                imagen[0].src = "imagen2.jpg"//Nombre que le pomga a la foto descargada en mi carpeta.
+            }
+            
+        }
+        window.onload = function(){
+            var botones = document.getElementsByTagName("button");
+            for(i in botones){
+                botones[i].addEventListener("click",mostar, false);
+            }
+        }
+
+    </script>
+</head>
+<body>
+    <button>Image 1</button>
+    <button>Image 2</button>
+    <img src="" alt="image">
+</body>
+</html>

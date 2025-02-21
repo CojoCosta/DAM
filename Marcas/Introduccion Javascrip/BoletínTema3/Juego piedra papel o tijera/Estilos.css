@@ -1,0 +1,80 @@
+*{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background-color:white;
+}
+
+header{
+    width: 100%;
+    height: 400px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+}
+
+h1{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+}
+
+.botones{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0%;
+} 
+
+#rules{
+    width: 200px;
+    height: 80px;
+    color: black;
+    animation: spin 2s linear infinite;
+    margin-left: 10px;
+    
+}
+#botonR{
+    background-color: red;
+    border-radius: 10px;
+}
+#fotos{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#piedra, #papel, #tijera{
+    width: 100%;
+    border: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+#result{
+    text-align: center;
+    width: 100%;
+    margin: 50px;
+    font-size: 35px;
+    color: green;
+    font-family: monospace;
+    font-weight: bold;
+}

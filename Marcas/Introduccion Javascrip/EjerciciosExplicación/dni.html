@@ -1,0 +1,51 @@
+<!--
+Pedir al usuario dni completo 8 nums y letra mayus;
+variable que almacene el num y otra con la letra;
+crear string o array que almacene las letras que puede llevar un dni;
+sacar mensaje que indica que la letra corresponde con el numero o no;
+
+1.- Iniciamos una array que guarde el dni
+
+2.- Pedimos al usuario que introduzca su dni y lo guadamos en el array
+creamos un bucle que recorra el array y guarde los primeros 8 caracteres  y  con un parseInt los convierta en numeros los guarde en un array y con un bucle for haga un acumulador y los sume y guarde esta suma en una variable y despues haga el calculo
+
+3.- Cogemos el ultimo caracter del array "array.length" y lo guardamos en una variable
+
+4.- Metemos los datos de que letra corresponda a que numero en un array
+
+5.- Hacemos una funcion que haga el calculo y al resultado le asignamos una letar con el array anterior
+
+6.- Comparamos ambas letras y enviamos el mensaje correspondiente segun coincide o no
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DNI</title>
+    <script>
+        function dni() {
+            //Defeinicion del conjunto de letras permitidas
+            var totalLetrasDni = "TRWAGMYFPDXBNJZSQVHLCKE"
+            //Devuelve un String
+            var DNI = prompt("Write your dni with capital letter: ");
+            var letra = DNI[DNI.length - 1];
+            var numeroString = DNI.substr(0,8);//numeros de dni como string
+            var numeroDNI = parseInt(numeroString);//pasamos de string a numero
+            var indice = numeroDNI % 23;
+            var letraDni = totalLetrasDni[indice];
+            //var letraDni = totalLetrasDni.charAt(numeroDNI % 23); //lo mismo que las dos lineas de arriba
+            if (letra == letraDni) {
+                window.alert("The letter is correct")
+            } else{
+                window.alert("The letter is not correct")
+            }
+        }
+    </script>
+</head>
+<body>
+    <script>
+        dni();
+    </script>
+</body>
+</html>

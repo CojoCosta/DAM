@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program in javascript for using loops</title>
+    <script>
+        function bucle() {
+            //bucle for
+            var matriz = [[1,2,3,4,5,6],[7,8,9,10,11,12],[13,14,15,16,17,18]];
+            for (var i = 0; i < matriz.length; i++) {
+                document.write("<tr>");
+                for (let j = 0; j < matriz[i].length; j++) {
+                    document.write("<td>");
+                        document.write(matriz[i][j]);
+                        document.write("</td>")
+                    }
+                    document.write("</tr>")                
+            }
+        }
+        //bucle while
+        function bucle2() {
+            var valor = 1;
+            while (valor <= 10) {
+                document.write(valor);
+                document.write("<br>");
+                valor ++;
+            }
+        }
+        //bucle dowhile
+        function bucle3(){
+            var valor = 1;
+            do{
+                document.write(valor);
+                document.write("<br>");
+                valor ++;
+            } while (valor <= 10);
+        }
+        //for in
+        function bucle4(){
+            var elementos = new Array("uno", "dos", "tres");
+            for(elemento in elementos){
+                document.write(elemento + " : " + elementos[elemento]);
+                document.write("<br>");
+            }
+        }
+        //for of
+        function bucle5(){
+            var elementos2 = new Array("Luisa", "Maria", "Juan");
+            for(elemento2 of elementos2){
+                document.write(elemento2);
+                document.write("<br>");
+            }
+        }
+        //foreach
+        function bucle6(){
+            var elementos3 = new Array("David", "Felipe", "Isabel");
+            elementos3.forEach(function(elemento){
+                document.write(elemento);
+                document.write("<br>");
+            })
+        }
+        //if...esle if (if anidados)
+        function ifelse(){
+            var mascota = "perro";
+            if(mascota == "perro"){
+                document.write("El perro ladra");
+            } else if(mascota == "gato"){
+                document.write("El gato maulla");
+            } else{
+                document.write("Tu mascota no es ni perro ni gato");
+            }
+        }
+        //Estructura de un switch
+        function estructuraSwitch(){
+            var mascota2 = "Leon";
+            switch(mascota2){
+                case "perro":
+                    document.write("El perro ladra");
+                    break;
+                case "gato":
+                    document.write("El pgato maulla");
+                    break;
+                default:
+                    document.write("Tu mascota no es ni perro ni gato");
+                    break;                    
+            }
+        }
+        //crear objeto, array asociativo (se identifica un elemento de un array a traves de una clave)
+        function objeto(){
+            const persona={
+                Nombre:"Diego ",
+                Edad: 24,
+                Profesion: " Alumno"
+            }
+            document.write(persona["Nombre"])
+            document.write(persona["Edad"])
+            document.write(persona["Profesion"])
+            document.write("<br>");
+            for(clave in persona){
+                document.write(`${clave}: ${persona[clave]}`);
+                document.write("<br>");
+            }
+        }
+
+    </script>
+</head>
+<body>
+    <table>
+        <script>
+            bucle();
+            bucle2();
+            bucle3();
+            bucle4();
+            bucle5();
+            bucle6();
+            ifelse();
+            estructuraSwitch();
+            objeto();
+        </script>
+    </table>
+</body>
+</html>
